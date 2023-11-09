@@ -1,0 +1,726 @@
+
+<!DOCTYPE html>
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+
+
+ <!-- head
+ ============================================================================ -->
+ <head>
+     <!-- Basic Info
+    ======================================================================== -->
+    <title>Jessikat Irisviel | {Title} | Creadora de Contenidos</title>
+    <link rel="icon" type="image/x-icon" href="{Favicon}">
+    <meta charset="utf-8" />
+    <meta name="author" content="Jessikat Irisviel Mendieta" />
+    <meta name="robots" content="index follow" />
+    <meta name="googlebot" content="index follow" />
+    <meta name="description" content="{MetaDescription}" />
+    <meta name="keywords" content="Jessikat, Irisviel, Sainz, Mendieta, Catgirljessie, Catgeek, Catgeeks, Creadora Contenidos, blogger, developer, personal, linktree, youtube, twitch, trovo, streamer, activista, quality assurance,webdesign">
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="{Title}"/>
+    <meta name="twitter:creator" content="@jessikatme">
+    <meta name="twitter:description" content="{MetaDescription}"/>
+
+    <meta property="og:title" content="{Title}" />
+    <meta property="og:description" content="{MetaDescription}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jessikat.me/" />
+
+    <!-- Mobile Configurations
+    ======================================================================== -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    
+   
+  
+    <!-- Google Fonts
+    ======================================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    
+    <!--  CSS Files Font Awesome
+    ======================================================================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css" integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+    <!--  CSS Code
+    ======================================================================== -->
+    <style type="text/css">
+    
+    /* Light/Dark Scheme
+    *********************/
+    @media(prefers-color-scheme: dark){
+        :root{
+            --background: #202020;
+            --btn-inactive: #404040;
+            --btn-active: #7214FF;
+            --subtitle: #ffffff;
+            --text-alt: #ffffff;
+            --text: #ffffff;
+            --shadow: 0px 0px 10px #404040;
+            --shadow-alt: 0px 0px 10px #7214FF;
+            --link:#D0D0D0;
+            --link-alt: #7214FF;
+        }
+        
+    }
+                
+    @media(prefers-color-scheme: light){
+        :root{
+            --background: #ffffff;
+             --btn-inactive: #404040;
+            --btn-active: #7214FF;
+            --subtitle: #000;
+            --text-alt: #ffffff;
+            --text: #ffffff;
+            --shadow: 0px 0px 10px #404040;
+            --shadow-alt: 0px 0px 10px #7214FF;
+            --link: #404040;
+            --link-alt: #7214FF;
+        }
+        
+    }
+
+    #tumblr_controls, .iframe-controls-container, .iframe-controls-container--jessikatme, .iframe-controls-container--unified {
+
+        display: none;
+
+    }
+     
+    /* Body, Article and Footer
+    *********************/
+
+    wrapper { width: 100%; }
+	body {
+        background-color:var(--background);
+        font-family: 'Poppins', 'Montserrat', Open Sans, Trebuchet MS, Verdana, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        color:var(--subtitle);
+        margin:0 0 0 0;
+
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    
+    article, footer {
+        background-color: var(--background);
+        margin: auto;
+        width: 100%;
+        clear: both;
+        text-align: center;
+
+    }
+  
+    header { 
+        background-color: var(--background);
+        margin: auto;
+        width: 50%;
+        clear: both;
+        padding-top: 10px; 
+        padding-bottom: 10px;
+        max-width: 90%;
+    }
+    article { 
+        padding-top: 5rem;
+        padding-bottom: 30px;
+        
+    }
+
+    h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', Open Sans, Trebuchet MS, Verdana, Arial, sans-serif; }
+    h1 { 
+        font-weight: 700; 
+        font-size: 42px; 
+        line-height: 1.2; 
+    }
+
+    h2, h3, h4, h5, h6 { font-weight: 400; }
+    
+    h2 { 
+        font-size: 32px; 
+        letter-spacing: 2px; 
+        line-height: .95; 
+    }
+
+    .rainbow-text {
+
+        background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red); 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        font-size: 20px;
+        font-weight: 600;
+        max-width:270px;
+        padding:12px;
+
+    }
+    .transpride-text {
+        background-image: linear-gradient(to right, #5BCEFA, #F5A9B8, #ffffff, #F5A9B8, #5BCEFA);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        font-size: 20px;
+        font-weight: 600;
+        max-width:200px;
+        padding:12px;
+    }
+    
+        .pansexual-text {
+        background-image: linear-gradient(to right, #ff218c, #fed800, #21b1ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        font-size: 20px;
+        font-weight: 600;
+        max-width:180px;
+        padding:12px;
+    }
+   
+
+    /* Content
+    *********************/
+    .content {
+        margin: 1rem auto;
+        max-width:768px !important;
+
+ 
+    }
+
+    .centered {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Container
+    *********************/
+    div.container{
+        width: 50%;
+        clear: both;
+        margin: auto;
+        display: flex;
+        
+        justify-content: center;
+    }
+
+        div.containerlinks{
+        width:50%;
+        clear:both;
+        margin: auto;
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    /* Styling Link Buttons
+    *********************/
+    a{
+        text-decoration:none;
+        color:var(--text);
+        -webkit-transition: all 0.30s ease-in-out;
+       -moz-transition: all 0.30s ease-in-out;
+         -o-transition: all 0.30s ease-in-out;
+            transition: all 0.30s ease-in-out;
+        
+    }
+    a svg{
+        padding-right:8px;
+            
+    }
+
+    a.link {
+        font-weight: 500;
+        color: #7214FF;
+        text-decoration: none;
+        transition: all .30s ease-in-out;
+    }
+
+    a.link:active, a.link:focus, a.link:hover {
+        border-bottom: #7214FF 1px solid;
+    }
+    
+    a.button {
+        display: inline-flex;
+        width: 40%;
+        margin-bottom:10px;
+    }
+    
+    a.button{
+        background-color:var(--btn-inactive);
+        border-radius:5px;
+        color:var(--text);
+        margin-right:10px;
+        padding:12px;
+        box-shadow: var(--shadow);
+        
+        align-content: center !important;
+        align-items: center!important;
+
+    }
+    a.links {
+        color:var(--link);
+        margin:0px;
+        padding:12px;
+        text-shadow: var(--shadow);
+
+    }
+
+    /* Animate button
+    *********************/
+    a.button:active, a.button:focus, a.button:hover {
+        background-color:var(--btn-active);
+        color:var(--text-alt);
+        box-shadow: var(--shadow-alt);
+    }
+
+    a.links:active, a.links:focus, a.links:hover {
+        color:var(--btn-active);
+        text-shadow: var(--shadow-alt);
+    }
+    
+    
+    /* Styling Avatar
+    *********************/    
+    .avatar {
+        box-shadow: 0px 0px 20px rgb(0 0 0 / 60%);
+    }
+    .avatar_frame {
+        box-shadow: 0px 0px 20px #7214FF;
+        width: 128px;
+        margin: 10px;
+        border: 5px solid #7214FF;
+        border-radius: 500px;
+        -webkit-border-radius: 500px;
+        -moz-border-radius: 500px;
+
+    }
+    i { padding-right:8px; }
+
+    /* Header Navigation
+    *********************/
+    .float-right {
+        float: right;
+    }
+    .navigation {
+        margin: 1rem auto;
+        max-width: 100%;
+        width: 100%;
+        
+    }
+    
+    .navigation a,.navigation span {
+        display: inline;
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: var(--subtitle);
+        
+    }
+    
+    .navigation a:hover,.navigation a:focus { color: #7214FF; }
+    .navigation .navigation-title {
+        letter-spacing: .1rem;
+        text-transform: uppercase;
+        
+    }
+    
+    .navigation .navigation-list { 
+        float:right;
+        list-style:none;
+        margin-bottom:0;
+        margin-top:0; 
+        
+        clear: both;
+        margin: auto;
+        display: flex;
+        
+    }
+
+    .navigation .navigation-list .navigation-item { 
+        float:left;
+        margin:0;
+        position:relative;
+        
+    }
+    
+      
+    .navigation .navigation-list .navigation-item a,.navigation .navigation-list .navigation-item span { 
+        margin-left:1rem;
+        margin-right:1rem; 
+        
+    }
+        
+    .navigation #dark-mode-toggle { 
+        margin:1.7rem 0;
+        font-size:2.4rem;
+        line-height:inherit;
+        bottom:2rem;
+        left:2rem;
+        z-index:100;
+        position:fixed
+    }
+
+    .navigation #menu-toggle { 
+        display:none; 
+    }
+
+    .navigation .menu-button { 
+        display:none; 
+    }
+    .navigation .menu-button i:hover,.navigation .menu-button i:focus { 
+        color: var(--subtitle);
+    }
+    .navigation i { 
+        color: var(--subtitle);
+        cursor: pointer; 
+    }
+    .navigation i:hover,.navigation i:focus { color: var(--btn-active) }    
+    
+    @media screen and (max-width: 1024px) {
+        header { 
+            text-align: left !important; 
+            max-width: 90%;
+            width: 85%; 
+            
+        }
+        .content {
+            margin: 1rem auto;
+            max-width: 90% !important;
+            width: none !important;
+        }
+        
+    }
+    
+    @media screen and (max-width: 768px) {
+        header { 
+            text-align: left !important; 
+            max-width: 90%;
+            width: 100%; 
+            
+        }
+        .content {
+            margin: 1rem auto;
+            max-width: 90% !important;
+            width: none !important;
+        }
+        
+    }
+     @media screen and (max-width: 630px) {
+        header { text-align: left !important; max-width: 90%; width:100%; }
+        .content {
+            margin: 10px;
+            max-width: 100% !important;
+            width: none !important;
+        }
+
+        h1 { font-size: 2rem; }
+        h2 { font-size: 1.5rem; }
+        body { font-size: 1rem; }
+
+        
+        .navigation .navigation-list {
+            position:relative;
+            top:2rem;
+            right:0;
+            z-index:5;
+            visibility:hidden;
+            opacity:0;
+            padding:0;
+            max-height:0;
+            width:50%;
+            background-color:var(--background);
+            border-top:solid 2px #e0e0e0;
+            border-bottom:solid 2px #e0e0e0;
+            transition: opacity .25s, max-height .15s linear;
+            float: right;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .navigation .navigation-list .navigation-item { 
+            float:none!important;
+            text-align:center; 
+            
+        }
+        .navigation .navigation-list .separator { display:none; }
+
+        .navigation .navigation-list .menu-separator { 
+            border-top:2px solid #212121; 
+            margin:0 8rem;
+            
+        }
+        .navigation .navigation-list .navigation-item a,.navigation .navigation-list .navigation-item span { line-height: 5rem; }
+        .navigation .navigation-list .menu-separator span { display: none; }
+        .navigation #menu-toggle:checked+label>i { color:v ar(--subtitle); }
+        .navigation #menu-toggle:checked+label+ul { 
+            visibility: visible;
+            opacity: 1;
+            max-height:100rem; 
+        }
+        .navigation .menu-button { 
+            position: relative;
+            display: block;
+            font-size: 1.125rem;
+            font-weight: 400;
+        }
+
+        div.container{
+
+            justify-content: center !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            width: 100% !important;
+        }
+  
+        a.button {
+
+            width: 90% !important;
+            justify-content: center !iportant;
+            margin-bottom: 10px;
+            align-content: center !important;
+            margin-right: 0px !important;
+        }
+    }
+    
+     @media screen and (max-width: 425px) {
+        
+        header { 
+            text-align: left !important; 
+            max-width: 90%;
+            width: 100%; 
+            
+        }
+        .content {
+            margin: 20px !important;
+            max-width: 100% !important;
+            width: none !important;
+        }
+
+        h1 { font-size: 2rem; }
+        h2 { font-size: 1.5rem; }
+        body { font-size: 1rem; }
+
+        .navigation .navigation-list {
+            position:relative;
+            top:2rem;
+            right:0;
+            z-index:5;
+            visibility:hidden;
+            opacity:0;
+            padding:0;
+            max-height:0;
+            width:50%;
+            background-color:var(--background);
+            border-top:solid 2px #e0e0e0;
+            border-bottom:solid 2px #e0e0e0;
+            transition: opacity .25s, max-height .15s linear;
+            float: right;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .navigation .navigation-list .navigation-item { 
+            float:none!important;
+            text-align:center; 
+            
+        }
+        .navigation .navigation-list .separator { display:none; }
+
+        .navigation .navigation-list .menu-separator { 
+            border-top:2px solid #212121; 
+            margin:0 8rem;
+            
+        }
+        .navigation .navigation-list .navigation-item a,.navigation .navigation-list .navigation-item span { line-height: 5rem; }
+        .navigation .navigation-list .menu-separator span { display: none; }
+        .navigation #menu-toggle:checked+label>i { color:v ar(--subtitle); }
+        .navigation #menu-toggle:checked+label+ul { 
+            visibility: visible;
+            opacity: 1;
+            max-height:100rem; 
+        }
+        .navigation .menu-button { 
+            position: relative;
+            display: block;
+            font-size: 1.125rem;
+            font-weight: 400;
+        }
+
+        div.container{
+
+            justify-content: center !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            width: 100% !important;
+        }
+  
+        a.button {
+
+            width: 90% !important;
+            justify-content: center !iportant;
+            margin-bottom: 10px;
+            align-content: center !important;
+            margin-right: 0px !important;
+        }
+    }
+    
+    @media screen and (max-width: 320px) {
+        
+        header { 
+            text-align: left !important; 
+            max-width: 90%;
+            width: 100%; 
+            
+        }
+        .content {
+            margin: 10px;
+            max-width: 100% !important;
+            width: none !important;
+        }
+
+        h1 { font-size: 2rem; }
+        h2 { font-size: 1.5rem; }
+        body { font-size: 1rem; }
+
+        .navigation .navigation-list {
+            position:relative;
+            top:2rem;
+            right:0;
+            z-index:1000;
+            visibility:hidden;
+            opacity:0;
+            padding:0;
+            max-height:0;
+            width:50%;
+            background-color:var(--background);
+            border-top:solid 2px #e0e0e0;
+            border-bottom:solid 2px #e0e0e0;
+            transition: opacity .25s, max-height .15s linear;
+            float: right;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .navigation .navigation-list .navigation-item { 
+            float:none!important;
+            text-align:center; 
+            
+        }
+        .navigation .navigation-list .separator { display:none; }
+
+        .navigation .navigation-list .menu-separator { 
+            border-top:2px solid #212121; 
+            margin:0 8rem;
+            
+        }
+        .navigation .navigation-list .navigation-item a,.navigation .navigation-list .navigation-item span { line-height: 5rem; }
+        .navigation .navigation-list .menu-separator span { display: none; }
+        .navigation #menu-toggle:checked+label>i { color:v ar(--subtitle); }
+        .navigation #menu-toggle:checked+label+ul { 
+            visibility: visible;
+            opacity: 1;
+            max-height:100rem; 
+        }
+        .navigation .menu-button { 
+            position: relative;
+            display: block;
+            font-size: 1.125rem;
+            font-weight: 400;
+        }
+
+        div.container{
+
+            justify-content: center !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            width: 100% !important;
+        }
+  
+        a.button {
+
+            width: 80% !important;
+            justify-content: center !iportant;
+            margin-bottom: 10px;
+            align-content: center !important;
+            margin-right: 0px !important;
+        }
+    }
+
+  </style>
+ </head>
+ 
+    <!-- Body
+    ============================================================================ -->
+    <body>
+        <main class="wrapped">
+            <header>
+                <nav class="navigation">
+                    <!-- section class="content" -->
+                        <a class="navigation-title" href="/"><strong>@Jessikatme</strong></a>
+                        <input type="checkbox" id="menu-toggle"> 
+                        <label class="menu-button float-right" for="menu-toggle">
+                            <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+                        </label>
+                        <ul class="navigation-list">
+                            <li class="navigation-item">
+                                <a class="navigation-link" href="/about/">About</a>
+                            </li>
+                            <li class="navigation-item">
+                                <a class="navigation-link" href="https://t.me/s/JessikatMeBlog" target="_blank">Blog</a>
+                            </li>
+                            <li class="navigation-item">
+                                <a class="navigation-link" href="https://spotifyanchor-web.app.link/e/qabD9UQJbtb" target="_blank">Podcast</a>
+                            </li>
+                            <li class="navigation-item">
+                                <a class="navigation-link" href="/contact/">Contact</a>
+                            </li>
+                        </ul>
+                    <!-- /section -->
+                </nav>
+            </header>
+
+            <article>
+                <section class="content">
+                    <img src="{Favicon}" alt="avatar" class="eiwwqkts _noSelect cat avatar avatar_frame">
+                    <h1>{Title}</h1>
+                    <h2>Transgender Content Creator</h2>
+                    <!-- p>{Description}</p -->
+                    <br>
+                    <div class="container">
+                        <a href="https://twitch.tv/jessikatme" class="button shadow" target="_blank"><i class="fa-brands fa-twitch"></i> Twitch</a>
+                        <a href="https://www.youtube.com/channel/UC0kelkpXmIFPuTWWJsK1jfw" class="button shadow" target="_blank"><i class="fa-brands fa-youtube"></i> Youtube</a>
+                        <a href="https://www.tiktok.com/@jessikatme" class="button shadow" target="_blank"><i class="fa-brands fa-tiktok"></i> Tiktok</a>
+                        <a href="https://t.me/s/jessikatmeblog" class="button shadow" target="_blank"><i class="fa-brands fa-telegram"></i> Blog</a>
+                        
+                    </div>
+
+
+                </section>
+            </article>
+            
+            <footer>
+                <div class="containerlinks">
+                        <a href="https://twitter.com/jessikatme" class="links" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/Jessikatme" class="links" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/jessikatme" class="links" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://ko-fi.com/jessikatme" class="links" target="_blank"><i class="fa-solid fa-mug-saucer"></i></a>
+                        <a href="https://curiouscat.live/JessikatMe" class="links" target="_blank"><i class="fa-solid fa-cat"></i></a>
+                </div>
+                <div class="container">
+                        <a class="pansexual-text">#LoveIsLove </a><br>
+                        <a class="transpride-text"> #TransIsBeautifull </a><br>
+                    
+                </div>
+            </footer>
+
+        </main> 
+    </body>   
+ </html>
