@@ -72,31 +72,7 @@
     <!--  CSS Code
     ======================================================================== -->
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script>
-        //determines if the user has a set theme
-function detectColorScheme(){
-    var theme="light";    //default to light
-
-    //local storage is used to override OS theme settings
-    if(localStorage.getItem("theme")){
-        if(localStorage.getItem("theme") == "dark"){
-            var theme = "dark";
-        }
-    } else if(!window.matchMedia) {
-        //matchMedia method not supported
-        return false;
-    } else if(window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        //OS theme setting detected as dark
-        var theme = "dark";
-    }
-
-    //dark theme preferred, set document with a `data-theme` attribute
-    if (theme=="dark") {
-         document.documentElement.setAttribute("data-theme", "dark");
-    }
-}
-detectColorScheme();
-</script>
+ 
 
  </head>
  
@@ -131,9 +107,6 @@ detectColorScheme();
                         </ul>
                     <!-- /section -->
                 </nav>
-                <label id="theme-switch" class="theme-switch" for="checkbox_theme">
-                    <input type="checkbox" id="checkbox_theme">
-                </label>
             </header>
 
             <article>
@@ -189,7 +162,6 @@ detectColorScheme();
                 <div class="container">                
                  <a href='https://jessikat.me/donations' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
                 </div>
-                <script src="./script.js"></script>
             </footer>
 
         </main> 
