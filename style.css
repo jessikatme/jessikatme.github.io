@@ -381,7 +381,7 @@
         
     }
     
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 865px) {
         header { 
             text-align: left !important; 
             max-width: 90%;
