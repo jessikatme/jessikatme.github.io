@@ -6,12 +6,12 @@
             --text: #ffffff;
             --subtitle: #7214FF;
             --btn: #7214FF;
-            --btn-alt: #492250;
+            --btn-alt: #c636ff;
             --btn-text: #ffffff;
             --shadow: 0px 0px 10px #7214FF;
-            --shadow-alt: 0px 0px 10px #492250;
+            --shadow-alt: 0px 0px 10px #c636ff;
             --link:#7214FF;
-            --link-alt: #492250;
+            --link-alt: #c636ff;
         }
         
     }
@@ -20,13 +20,13 @@
         :root{
             --background: #ffffff;
             --text: #202020;
-            --subtitle: #492250;
-            --btn: #492250;
+            --subtitle: #c636ff;
+            --btn: #c636ff;
             --btn-alt: #7214FF;
             --btn-text: #ffffff;
-            --shadow: 0px 0px 10px #492250;
+            --shadow: 0px 0px 10px #c636ff;
             --shadow-alt: 0px 0px 10px #7214FF;
-            --link: #492250;
+            --link: #c636ff;
             --link-alt: #7214FF;
         }
         
