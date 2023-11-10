@@ -124,7 +124,7 @@
                     <div class="form-group">
                         <label class="control-label" for="longUrl">Resultado (Copia y usa el nuevo enlace)</label>
                         <input id="longUrl" onclick="this.select();" class="form-control" type="url" placeholder="Nuevo enlace"/>
-                        <a href="#" id="longUrl" onclick="copyBtn()" title="Copiar enlace" class="button shadow">Copiar enlace</a>
+                        
                     </div>
 
                     <!-- div class="form-group">
@@ -133,14 +133,15 @@
                     </div -->
 
                     <div class="container">
-                        <a href="#" id="directLink" title="Enlace directo" class="button shadow" target="_blank">Ir a Amazon</a>
+                        <a href="#" id="longUrl" onclick="copyBtn()" title="Copiar enlace" class="button shadow">Copiar enlace</a>
+                        <a href="#" id="directLink" title="Enlace directo" class="button shadow" target="_blank">Ir al producto</a>
                     </div>
         
 
                     <script>
-                            function copyBtn() {
-                                    navigator.clipboard.writeText('directLink');
-                                }
+                    function copyBtn() {
+                        navigator.clipboard.writeText('directLink');
+                    }
                     window.onload = function() {
 
                         var url = document.getElementById('url');

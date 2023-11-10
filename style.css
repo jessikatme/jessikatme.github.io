@@ -2,16 +2,16 @@
     *********************/
     @media(prefers-color-scheme: dark){
         :root{
-            --background: #202020;
-            --btn-inactive: #404040;
-            --btn-active: #7214FF;
-            --subtitle: #ffffff;
-            --text-alt: #ffffff;
+            --background: #101010;
             --text: #ffffff;
-            --shadow: 0px 0px 10px #404040;
-            --shadow-alt: 0px 0px 10px #7214FF;
-            --link:#D0D0D0;
-            --link-alt: #7214FF;
+            --subtitle: #7214FF;
+            --btn: #7214FF;
+            --btn-alt: #492250;
+            --btn-text: #ffffff;
+            --shadow: 0px 0px 10px #7214FF;
+            --shadow-alt: 0px 0px 10px #492250;
+            --link:#7214FF;
+            --link-alt: #492250;
         }
         
     }
@@ -19,14 +19,14 @@
     @media(prefers-color-scheme: light){
         :root{
             --background: #ffffff;
-             --btn-inactive: #404040;
-            --btn-active: #7214FF;
-            --subtitle: #000;
-            --text-alt: #ffffff;
-            --text: #ffffff;
-            --shadow: 0px 0px 10px #404040;
+            --text: #202020;
+            --subtitle: #492250;
+            --btn: #492250;
+            --btn-alt: #7214FF;
+            --btn-text: #ffffff;
+            --shadow: 0px 0px 10px #492250;
             --shadow-alt: 0px 0px 10px #7214FF;
-            --link: #404040;
+            --link: #492250;
             --link-alt: #7214FF;
         }
         
@@ -45,9 +45,9 @@
 	body {
         background-color:var(--background);
         font-family: 'Poppins', 'Montserrat', Open Sans, Trebuchet MS, Verdana, Arial, sans-serif;
-        font-size: 16px;
+        font-size: 1.1rem;
         font-weight: 300;
-        color:var(--subtitle);
+        color:var(--text);
         margin:0 0 0 0;
 
         -webkit-font-smoothing: antialiased;
@@ -81,29 +81,43 @@
         
     }
 
+    footer{padding-bottom: 5rem;}
+
     h1 { 
         font-family: 'Sacramento', cursive;
-        font-size: 70px;
-        line-height:50px !important;
-        color: #7214FF;
+        font-size: 4rem;
+        line-height:2rem !important;
+        color: var(--subtitle)
         
     } 
     
     h2, h3, h4, h5, h6 { 
         font-family: 'Poppins', Open Sans, Trebuchet MS, Verdana, Arial, sans-serif;
         font-weight: 400; 
+        color: var(--subtitle);
         
     }
     
     h2 { 
-        font-size: 40px;
-        font-weight: 700;
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 2.5rem;
     }
  
-
-
+    h3 { 
+        font-size: 25px;
+    }
+    h4 { 
+        font-size: 23px;
+    }
+    h5 { 
+        font-size: 20px;
+    }
+    h6 { 
+        font-size: 18px;
+        font-weight: 400;
+    }
     .rainbow-text {
-
         background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red); 
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -141,9 +155,7 @@
     *********************/
     .content {
         margin: 1rem auto;
-        max-width:768px !important;
-
- 
+        max-width:768px !important; 
     }
 
     .centered {
@@ -177,10 +189,7 @@
     a{
         text-decoration:none;
         color:var(--text);
-        -webkit-transition: all 0.30s ease-in-out;
-       -moz-transition: all 0.30s ease-in-out;
-         -o-transition: all 0.30s ease-in-out;
-            transition: all 0.30s ease-in-out;
+
         
     }
     a svg{
@@ -190,13 +199,14 @@
 
     a.link {
         font-weight: 500;
-        color: #7214FF;
+        color:var(--link);
         text-decoration: none;
-        transition: all .30s ease-in-out;
+        
     }
 
     a.link:active, a.link:focus, a.link:hover {
-        border-bottom: #7214FF 1px solid;
+        color:var(--link-alt);
+        border-bottom: var(--link-alt) 2px solid;
     }
     
     a.links {
@@ -207,12 +217,16 @@
         font-size: 32px;
 
     }
+    a.links:active, a.links:focus, a.links:hover {
+        color:var(--link-alt);
+        text-shadow: var(--shadow-alt);
+    }
     
     a.button{
         width:320px !important;
-        background-color:var(--btn-inactive);
+        background-color:var(--btn);
         border-radius:5px;
-        color:var(--text);
+        color:var(--btn-text);
         margin-right:10px;
         margin-bottom:10px;
         padding:12px;
@@ -222,6 +236,11 @@
         align-items: center !important;
         justify-content: center !important;
         text-decoration: none;
+    }
+    a.button:active, a.button:focus, a.button:hover {
+        background-color:var(--btn-alt);
+        color:var(--btn-text);
+        box-shadow: var(--shadow-alt);
     }
 
 
@@ -233,9 +252,8 @@
 
     .form-control {
         width:320px !important;
-
-        height: 34px;
-        padding: 6px 12px;
+        height: 25px;
+        padding: 5px 10px;
         line-height: 1.42857143;
         color: #555;
         background-color: #fff;
@@ -252,18 +270,7 @@
 
     label.control-label { font-weight:bold; }
 
-    /* Animate button
-    *********************/
-    a.button:active, a.button:focus, a.button:hover {
-        background-color:var(--btn-active);
-        color:var(--text-alt);
-        box-shadow: var(--shadow-alt);
-    }
-
-    a.links:active, a.links:focus, a.links:hover {
-        color:var(--btn-active);
-        text-shadow: var(--shadow-alt);
-    }
+   
     
     
     /* Styling Avatar
@@ -303,12 +310,16 @@
         
     }
     
-    .navigation a:hover,.navigation a:focus { color: #7214FF; }
+    .navigation a:hover,.navigation a:focus { 
+        color: var(--link-alt);
+    }
+
     .navigation .navigation-title {
 
         font-family: 'Sacramento', cursive;
         font-size:30px;
-        color:#7214FF;
+        color:var(--link);
+        line-height: 1rem;
         
     }
     
@@ -362,7 +373,7 @@
         color: var(--subtitle);
         cursor: pointer; 
     }
-    .navigation i:hover,.navigation i:focus { color: var(--btn-active) }    
+    .navigation i:hover,.navigation i:focus { color: var(--btn-alt) }    
     
     @media screen and (max-width: 1024px) {
         header { 
@@ -385,23 +396,16 @@
         header { 
             text-align: left !important; 
             max-width: 90%;
-            width: 100%; 
-            
+            width: 100%;  
         }
-        /*.content {
-            margin: 1rem auto;
-            max-width: 90% !important;
-            width: none !important;
-        } */
 
         .content {
             margin: 10px;
             max-width: 100% !important;
-
         }
 
-        h1 { font-size: 2rem; }
-        h2 { font-size: 1.5rem; }
+        h1 { font-size: 2.5rem !important; }
+        h2 { font-size: 1.5rem; line-height: 2rem; }
         body { font-size: 1rem; }
 
         
@@ -470,7 +474,7 @@
 
         }
 
-        h1 { font-size: 2rem; }
+        h1 { font-size: 2.5rem !important; }
         h2 { font-size: 1.5rem; }
         body { font-size: 1rem; }
 
@@ -547,7 +551,7 @@
             width: none !important;
         }
 
-        h1 { font-size: 2rem; }
+        h1 { font-size: 2.5rem !important; }
         h2 { font-size: 1.5rem; }
         body { font-size: 1rem; }
 
@@ -622,7 +626,7 @@
             width: none !important;
         }
 
-        h1 { font-size: 2rem; }
+        h1 { font-size: 2.5rem !important; }
         h2 { font-size: 1.5rem; }
         body { font-size: 1rem; }
 
